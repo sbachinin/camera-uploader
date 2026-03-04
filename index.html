@@ -16,7 +16,7 @@
     <p id="status"></p>
 
     <script>
-      const token = "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";
+      const token = "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";
       const owner = "sbachinin";
       const repo = "osm-ids-to-photos";
       const branch = "main";
@@ -43,6 +43,7 @@
               method: "PUT",
               headers: {
                 Authorization: `Bearer ${token}`,
+                "Accept": "application/vnd.github+json",
                 "Content-Type": "application/json",
               },
               body: JSON.stringify({
